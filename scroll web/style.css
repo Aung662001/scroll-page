@@ -1,0 +1,85 @@
+:root {
+  --background-color: rgb(62, 197, 152);
+  --color: #f9f9f9;
+  --text: rgb(125, 150, 134);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body {
+  background-color: #f9f9f9;
+  height: 100px;
+  /* overflow: hidden; */
+}
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 30px 100px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  z-index: 20;
+}
+.logo {
+  font-size: 2em;
+  color: rgb(53, 146, 115);
+  pointer-events: none;
+  margin-right: 280px;
+}
+.navigation a {
+  font-size: 1.2em;
+  text-decoration: none;
+  color: var(--background-color);
+  padding: 5px 10px;
+  margin: 0px 5px;
+  border-radius: 20px;
+}
+.navigation a:hover {
+  background-color: var(--background-color);
+  color: var(--color);
+  transition: all 0.2s ease-in-out;
+}
+.navigation a.active {
+  background-color: var(--background-color);
+  color: var(--color);
+}
+.Parallax {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.text {
+  position: absolute;
+  color: rgb(125, 150, 134);
+  font-size: 4rem;
+  text-shadow: #478456 3px 3px 3px;
+}
+.Parallax img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.second {
+  top: -20px;
+  position: relative;
+  background-color: #003329;
+  padding: 100px;
+}
+.second h2 {
+  color: var(--text);
+  font-size: 3rem;
+  text-shadow: #478456 3px 3px 3px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.second p {
+  color: var(--text);
+}
