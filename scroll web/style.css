@@ -14,6 +14,11 @@ body {
   height: 100px;
   /* overflow: hidden; */
 }
+
+main {
+  overflow: hidden;
+}
+
 header {
   position: absolute;
   top: 0;
